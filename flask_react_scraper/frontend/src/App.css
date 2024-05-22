@@ -1,0 +1,75 @@
+/* Ensure the entire screen is covered by the background color */
+body, html, #root, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Use a modern, clean font */
+}
+
+/* Center the content using flexbox */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: background-color 2s ease-in-out; /* Smooth transition for background color */
+}
+
+/* Style the header */
+.App-header {
+  background-color: rgba(243, 238, 238, 0.7); /* Light semi-transparent background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(190, 16, 16); /* Subtle shadow for depth */
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Heading styling */
+.App-header h1 {
+  color: #1a1818; /* Dark gray color for good contrast */
+  font-size: 2em;
+  text-shadow: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  color: #333;
+  font-size: 1.1em;
+  text-shadow: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Full width minus padding and border */
+}
+
+/* Button styling */
+button {
+  padding: 12px 24px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Disabled button styling */
+button:disabled {
+  background-color: #cccccc;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  margin-top: 20px;
+}
